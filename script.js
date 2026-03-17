@@ -263,3 +263,30 @@ const observer = new IntersectionObserver((entries) => {
 }, { threshold: 0.2 });
 
 revealElements.forEach(el => observer.observe(el));
+
+
+
+
+const menuBt= document.getElementById("menuToggle");
+const navBt = document.getElementById("primaryLinks");
+
+if (menuBt && navBt) {
+  menuBt.addEventListener("click", () => {
+    const isOpen = navBt.classList.toggle("open");
+
+    // accessibility
+    menuBt.setAttribute("aria-expanded", isOpen);
+
+    // change icon
+    menuBt.textContent = isOpen ? "✖" : "☰";
+  });
+
+  // close menu when clicking any link/button
+  navBt.querySelectorAll("a, button").forEach(el => {
+    el.addEventListener("click", () => {
+      navBt.classList.remove("open");
+      menuBt.setAttribute("aria-expanded", "false");
+      menuBt.textContent = "☰";
+    });
+  });
+}

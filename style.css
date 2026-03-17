@@ -596,7 +596,26 @@ html {
 
 
 
+/* Hide menu by default (mobile) */
+#primaryLinks {
+  display: none;
+}
 
+/* Show when toggled */
+#primaryLinks.open {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 10px;
+}
+
+/* Optional styling */
+.menu-toggle {
+  font-size: 22px;
+  cursor: pointer;
+  border: none;
+  background: transparent;
+}
 
 
 
