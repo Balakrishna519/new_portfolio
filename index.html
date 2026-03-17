@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Balakrishna Sagar D • Full-Stack Developer Portfolio</title>
+  <meta name="description" content="Portfolio of Balakrishna Sagar D — Full-Stack Developer (MERN). Projects, skills, certifications, resume, and contact." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+<header>
+  <nav class="nav container" aria-label="Primary">
+    <a href="#home" class="brand" aria-label="Home">BS</a>
+
+    <!-- Mobile menu button -->
+    <button class="btn ghost menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="primaryLinks" aria-label="Toggle menu">
+      ☰
+    </button>
+
+    <!-- Give links an id so we can toggle them on mobile -->
+    <div class="links" id="primaryLinks">
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#education">Education</a>
+      <a href="#certs">Certifications</a>
+      <a href="#contact">Contact</a>
+      <button class="btn ghost theme-toggle" id="themeToggle" aria-label="Toggle theme">🌓</button>
+      <a class="btn primary" href="#contact">Hire Me</a>
+    </div>
+  </nav>
+</header>
+
+
+  <!-- Main 
+  <main id="home" class="container">
+    <!-- Hero 
+    <section class="hero">
+      <div class="hero-card reveal">
+        <span class="chip">📍 Mahabubnagar, Telangana, India</span>
+        <h1 class="title">Balakrishna Sagar D</h1>
+        <p class="subtitle">Full-Stack Developer — MERN (MongoDB • Express • React • Node) | JavaScript • Python • SQL • REST APIs</p>
+        <div class="badge-row">
+          <span class="pill">Open to Internships & SDE Roles</span>
+          <span class="pill">Building responsive, scalable apps</span>
+          <span class="pill">Nextwave Trainee</span>
+        </div>
+        <div class="cta-row">
+          <a class="btn" href="mailto:stalinsagar600@gmail.com">✉ Email</a>
+          <a class="btn" href="tel:+919133004973">📞 Call</a>
+          <a class="btn" target="_blank" rel="noopener" href="https://github.com/stalinsagar">🐙 GitHub</a>
+          <a class="btn" target="_blank" rel="noopener" href="https://www.linkedin.com/in/balakrishna-sagar-d-45391a353">in LinkedIn</a>
+          <a class="btn"  href="frontend.pdf" id="resumeBtn">⬇ Resume</a>
+        </div>
+      </div>
+    -->
+      
+
+
+    <!-- Main -->
+<main id="home" class="container">
+
+  <!-- Hero -->
+  <section class="hero">
+
+    <div class="hero-card reveal">
+
+      <!-- Left: Info -->
+      <div class="hero-content">
+        <span class="chip">📍 Mahabubnagar, Telangana, India</span>
+
+        <h1 class="title">Balakrishna Sagar D</h1>
+
+        <p class="subtitle">
+          Full-Stack Developer — MERN (MongoDB • Express • React • Node) |
+          JavaScript • Python • SQL • REST APIs
+        </p>
+
+        <div class="badge-row">
+          <span class="pill">Open to Internships & SDE Roles</span>
+          <span class="pill">Building responsive, scalable apps</span>
+          <span class="pill">Nextwave Trainee</span>
+        </div>
+
+        <div class="cta-row">
+          <a class="btn" href="mailto:stalinsagar600@gmail.com">✉ Email</a>
+          <a class="btn" href="tel:+919133004973">📞 Call</a>
+          <a class="btn" target="_blank" rel="noopener" href="https://github.com/stalinsagar">🐙 GitHub</a>
+          <a class="btn" target="_blank" rel="noopener" href="https://www.linkedin.com/in/balakrishna-sagar-d-45391a353">in LinkedIn</a>
+          <a class="btn resume-btn" href="frontend.pdf" id="resumeBtn">⬇ Resume</a>
+        </div>
+      </div>
+
+      <!-- Right: Image -->
+      <div class="hero-image">
+        <img src="stai.jpg" alt="Balakrishna Sagar">
+      </div>
+
+    </div>
+
+    <!-- Stats BELOW hero-card -->
+    <div class="stat-cards reveal" aria-label="Quick Facts">
+      <div class="stat">
+        <div class="num">8.0</div>
+        <div class="lab">CGPA (B.Tech, CSE)</div>
+      </div>
+      <div class="stat">
+        <div class="num">15+</div>
+        <div class="lab">Mini-projects & labs</div>
+      </div>
+      <div class="stat">
+        <div class="num">2026</div>
+        <div class="lab">Graduation Year</div>
+      </div>
+    </div>
+
+  </section>
+
+</main>
+
+
+    <!-- Projects-->
+    <section id="projects">
+      <div class="section-head">
+        <h2>Featured Projects</h2>
+        <p>Selected work with code and live demos</p>
+      </div>
+
+      <div class="filters" role="tablist" aria-label="Project filters">
+        <button class="filter active" data-filter="all" role="tab">All</button>
+        <button class="filter" data-filter="web" role="tab">Web</button>
+        <button class="filter" data-filter="android" role="tab">Android</button>
+        <button class="filter" data-filter="clone" role="tab">Clone/UI</button>
+      </div> 
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <div class="grid cols-3" id="projectGrid">
+         <!-- Project: E-MART -->
+  <article class="card project reveal" data-tags="web">
+    <div class="thumb">E-MART</div>
+    <div class="card-head">
+      <strong>E-MART – E-Commerce</strong>
+      <a href="#" class="kicker" onclick="openModal('emart')">Details</a>
+    </div>
+    <p>A modern e-commerce web application with product listings, category filters, cart system, and smooth UI interactions.</p>
+    <div class="tags">
+      <span class="pill">HTML</span><span class="pill">CSS</span><span class="pill">JavaScript</span>
+    </div>
+    <div class="btn-row">
+      <a class="btn" href="https://balakrishna519.github.io/E-MART/">Live</a>
+      <a class="btn" href="https://github.com/Balakrishna519/E-MART" rel="noopener">Code</a>
+    </div>
+  </article>
+
+        <!-- Project: E-Learn -->
+<article class="card project reveal" data-tags="web">
+  <div class="thumb">E-Learn</div>
+  <div class="card-head">
+    <strong>E-Learn – Online Learning</strong>
+    <a href="#" class="kicker" onclick="openModal('elearn')">Details</a>
+  </div>
+  <p>An interactive online learning platform with courses on HTML, CSS, JavaScript, and a built-in coding playground for practice.</p>
+  <div class="tags">
+    <span class="pill">HTML</span><span class="pill">CSS</span><span class="pill">JavaScript</span>
+  </div>
+  <div class="btn-row">
+    <a class="btn" href="https://balakrishna519.github.io/E-LEARN/">Live</a>
+    <a class="btn" href="https://github.com/Balakrishna519/E-LEARN" rel="noopener">Code</a>
+  </div>
+</article>
+
+
+        <!-- Project: Personal Portfolio -->
+<article class="card project reveal" data-tags="web"> 
+  <div class="thumb">Personal Portfolio</div>
+  <div class="card-head">
+    <strong>Personal Portfolio</strong>
+    <a href="#" class="kicker" onclick="openModal('portfolio')">Details</a>
+  </div>
+  <p>A modern personal portfolio website showcasing projects, skills, experience, and contact information with a clean responsive UI.</p>
+  <div class="tags">
+    <span class="pill">HTML</span><span class="pill">CSS</span><span class="pill">JavaScript</span>
+  </div>
+  <div class="btn-row">
+    <a class="btn" href="https://balakrishna519.github.io/PORTFOLIO/">Live</a>
+    <a class="btn" href="https://github.com/Balakrishna519/PORTFOLIO" rel="noopener">Code</a>
+  </div>
+</article>
+
+
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+      <div class="section-head">
+        <h2>Technical Skills</h2>
+        <p>Core stack & tools</p>
+      </div>
+      <div class="grid cols-3">
+        <div class="card reveal">
+          <div class="card-head"><strong>Frontend</strong><span class="kicker">UI & Web</span></div>
+          <div class="skills">
+            <span class="pill">HTML5</span><span class="pill">CSS3</span><span class="pill">Bootstrap</span><span class="pill">JavaScript</span><span class="pill">React.js</span>
+          </div>
+          <div class="meter">
+            <div class="kicker">Proficiency</div>
+            <div class="progress" aria-label="Frontend proficiency"><span style="width:82%"></span></div>
+          </div>
+        </div>
+
+        <div class="card reveal">
+          <div class="card-head"><strong>Backend</strong><span class="kicker">APIs & Services</span></div>
+          <div class="skills">
+            <span class="pill">Node.js</span><span class="pill">Express</span><span class="pill">REST APIs</span><span class="pill">Python</span>
+          </div>
+          <div class="meter">
+            <div class="kicker">Proficiency</div>
+            <div class="progress" aria-label="Backend proficiency"><span style="width:70%"></span></div>
+          </div>
+        </div>
+
+        <div class="card reveal">
+          <div class="card-head"><strong>Data & Tools</strong><span class="kicker">Storage & Viz</span></div>
+          <div class="skills">
+            <span class="pill">MongoDB</span><span class="pill">SQL</span><span class="pill">SQLite</span><span class="pill">Git</span><span class="pill">Power BI</span>
+          </div>
+          <div class="meter">
+            <div class="kicker">Proficiency</div>
+            <div class="progress" aria-label="Data tooling proficiency"><span style="width:64%"></span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education -->
+
+
+<section id="education">
+  <div class="section-head">
+    <h2>Education</h2>
+    <p>Academic timeline</p>
+  </div>
+
+  <div class="card reveal">
+    <div class="timeline">
+
+      <!-- College -->
+      <div class="t-item">
+        <div class="t-icon">
+          <i class="fa-solid fa-graduation-cap"></i>
+        </div>
+        <div class="t-content">
+          <strong>B.Tech in Computer Science & Engineering</strong> — Jayaprakash Narayan College of Engineering
+          <div class="kicker">Oct 2022 – Apr 2026 • CGPA: 8.0 • Mahabubnagar, Telangana</div>
+        </div>
+      </div>
+
+      <!-- Nextwave Training -->
+      <div class="t-item">
+        <div class="t-icon">
+          <i class="fa-solid fa-laptop-code"></i>
+        </div>
+        <div class="t-content">
+          <strong>Nextwave Training</strong> — Full-Stack Development (MERN)
+          <div class="kicker">Static Web Design • Responsive Web Design • Python • SQL • REST APIs</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+    <!-- Certifications -->
+    <section id="certs">
+      <div class="section-head">
+        <h2>Certifications</h2>
+        <p>Verified by Nextwave & Partner MNCs</p>
+      </div>
+
+      <div class="grid cols-3">
+        <!-- Static Web Design -->
+        <article class="card reveal cert">
+          <div class="cert-icon">
+            <img src="certi1.png" alt="HTML" />
+          </div>
+          <strong>Static Web Design</strong>
+          <div class="kicker">Nextwave</div>
+          <div class="btn-row">
+            <a class="btn" href="#" onclick="openCert('certi1.png','Static Web Design','Nextwave')">View Certificate</a>
+          </div>
+        </article>
+
+        <!-- Responsive Web Design -->
+        <article class="card reveal cert">
+          <div class="cert-icon">
+            <img src="day19.png" alt="CSS" />
+          </div>
+          <strong>Responsive Web Design</strong>
+          <div class="kicker">Nextwave</div>
+          <div class="btn-row">
+            <a class="btn" href="#" onclick="openCert('day19.png','Responsive Web Design','Nextwave')">View Certificate</a>
+          </div>
+        </article>
+
+        <!-- Python -->
+        <article class="card reveal cert">
+          <div class="cert-icon">
+            <img src="certificate_python.png" alt="Python" />
+          </div>
+          <strong>Python Programming</strong>
+          <div class="kicker">Nextwave</div>
+          <div class="btn-row">
+            <a class="btn" href="#" onclick="openCert('certificate_python.png','Python Programming','Nextwave')">View Certificate</a>
+          </div>
+        </article>
+
+        <!-- SQL -->
+        <article class="card reveal cert">
+          <div class="cert-icon">
+            <img src="sql-cerficate.png" alt="SQL" />
+          </div>
+          <strong>Structured Query Language (SQL)</strong>
+          <div class="kicker">Nextwave</div>
+          <div class="btn-row">
+            <a class="btn" href="#" onclick="openCert('sql-cerficate.png','SQL','Nextwave')">View Certificate</a>
+          </div>
+        </article>
+
+        <!-- Full Stack -->
+        <article class="card reveal cert">
+          <div class="cert-icon">
+            <img src="https://img.icons8.com/color/96/source-code.png" alt="Full Stack" />
+          </div>
+          <strong>Full-Stack Development</strong>
+          <div class="kicker">Nextwave & Partner MNCs</div>
+          <div class="btn-row">
+            <a class="btn" href="#" onclick="openCert('cert5.jpg','Full-Stack Development','Nextwave & MNCs')">View Certificate</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Certificate popup/modal -->
+    <div id="certModal" class="modal" aria-hidden="true" role="dialog" aria-modal="true">
+      <div class="modal-panel" role="document">
+        <div class="modal-header">
+          <button class="modal-close" aria-label="Close" onclick="closeCert()">×</button>
+          <h3 id="certTitle" class="modal-title">Certificate</h3>
+        </div>
+        <p id="certOrg" class="modal-org"></p>
+        <img id="certImg" src="" alt="Certificate Preview" />
+        <div class="modal-actions">
+          <a id="openFull" class="btn ghost" target="_blank" rel="noopener">Open full</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- About -->
+    <section id="about">
+      <div class="section-head">
+        <h2>About Me</h2>
+        <p>Student developer focused on clean UI & reliable APIs</p>
+      </div>
+      <div class="grid cols-2">
+        <div class="card reveal">
+          <p>I am a dedicated and passionate Computer Science student currently training at Nextwave to master Full-Stack Development under expert faculty guidance. I build responsive web and mobile applications with JavaScript, React, Node, Python, and SQL, focusing on clean code, accessibility, and performance.</p>
+          <p>Right now, I’m looking for opportunities where I can contribute to real-world products, learn from a strong team, and grow into an SDE role.</p>
+        </div>
+        <div class="card reveal">
+          <ul>
+            <li><strong>Email:</strong> <a href="mailto:stalinsagar600@gmail.com">stalinsagar600@gmail.com</a></li>
+            <li><strong>Phone:</strong> <a href="tel:+919133004973">+91 91330 04973</a></li>
+            <li><strong>Location:</strong> Mahabubnagar, Telangana, India</li>
+            <li><strong>GitHub:</strong> <a target="_blank" rel="noopener" href="https://github.com/stalinsagar">github.com/stalinsagar</a></li>
+            <li><strong>LinkedIn:</strong> <a target="_blank" rel="noopener" href="https://www.linkedin.com/in/balakrishna-sagar-d-45391a353">balakrishna-sagar-d</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <div class="section-head">
+        <h2>Contact</h2>
+        <p>Have a role or project? Let’s talk.</p>
+      </div>
+      <div class="grid cols-2">
+        <div class="card reveal">
+          <form action="https://formspree.io/f/your-id" method="POST" onsubmit="toast('Message sent! I\'ll get back soon.')">
+            <input required name="name" placeholder="Your name" />
+            <input required type="email" name="email" placeholder="Your email" />
+            <textarea required name="message" placeholder="Tell me about the opportunity" rows="5"></textarea>
+            <button class="btn primary" type="submit">Send Message</button>
+          </form>
+        </div>
+        <div class="card reveal">
+          <h3 class="no-top">Resume</h3>
+          <p>Need an offline copy? Download my latest one-page ATS-friendly resume.</p>
+          <a class="btn" id="resumeDownload" href="./frontend.pdf" download>
+  Download PDF
+</a>
+
+          <p class="kicker tip">Tip: Also available on LinkedIn.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+    
+
+<!-- Back to top -->
+<div class="back-to-top container">
+  <a href="#home" class="to-top-link" aria-label="Back to top">↑ Back to top</a>
+</div>
+
+
+
+  <footer>
+    © <span id="year"></span> Balakrishna Sagar D • Built with HTML, CSS & JavaScript • Inspired by award-winning portfolios
+  </footer>
+
+  <!-- Project details dialog -->
+  <dialog id="modal" class="proj-dialog">
+    <div class="card">
+      <div class="card-head">
+        <strong id="m-title">Project</strong>
+        <button class="btn ghost" onclick="closeModal()">✖</button>
+      </div>
+      <div id="m-body" class="kicker"></div>
+    </div>
+  </dialog>
+
+  <!-- Project detail templates -->
+  <template id="tpl-portfolio">
+    <p>Second edition of my personal site featuring accessibility checks (WCAG AA), lazy-loaded media, and a Lighthouse score targeting 95+.</p>
+    <ul>
+      <li>Stack: HTML, CSS, JS</li>
+      <li>Features: Theme toggle, scroll reveals, filterable projects</li>
+      <li>Planned: Blog (MD to HTML), RSS, analytics (privacy-friendly)</li>
+    </ul>
+  </template>
+
+  <template id="tpl-attendance">
+    <p>Android app that lets faculty create classes, take attendance quickly, and export semester-wise CSVs. Optimized for low-end phones.</p>
+    <ul>
+      <li>Stack: Java, SQLite</li>
+      <li>Features: Batch/categories, CSV export, absence highlights</li>
+      <li>Planned: Firebase sync, role-based login</li>
+    </ul>
+  </template>
+
+  <template id="tpl-nxtwave">
+    <p>A pixel-close clone of NxtWave’s marketing pages used to practice component breakdown, responsive grids, and interactive elements without frameworks.</p>
+    <ul>
+      <li>Stack: HTML, CSS, JS</li>
+      <li>Features: Responsive grid, sticky nav, animated counters</li>
+      <li>Planned: Accessibility passes & perf budget</li>
+    </ul>
+  </template>
+
+  <script src="script.js"></script>
+</body>
+</html>
